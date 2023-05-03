@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(202, 242, 255);
+}
+header {
+    background-color: darkblue;
+    box-shadow: 0px 3px 18px blue;
+}
