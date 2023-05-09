@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Formulário bootstrap</title>
+</head>
+
+<body>
+    <script>
+        /* var n1 = parseInt(prompt('digite o 1° número: '));
+         var n2 = parseInt(prompt("digite o 2°  nnúmero:"));
+         var soma = n1 + n2;
+         alert('Soma: '+ soma)*/
+
+    </script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-3">
+        <form action="">
+            <div class="row g-3">
+                <div class="col">
+                    <label for="numero1" class="form-label">Numero 1</label>
+                    <input type="text" class="form-control" placeholder="Numero 1" aria-label="Numero 1" name="numero1"
+                        id="numero1">
+                </div>
+
+                <div class="col">
+                    <label for="numero2" class="form-label"> Numero 2</label>
+                    <input type="text" class="form-control" placeholder="Numero 2" aria-label="Numero 2" name="numero2"
+                        id="numero2">
+                </div>
+
+                <div class="col">
+                    <label class="form-label"> Resultado </label>
+                    <input type="text" class="form-control" name="resultado" id="resultado" readonly>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="somarValores()">Calcular</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="JS/calculos.js"></script>
+</body>
+
+</html>
