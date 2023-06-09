@@ -41,7 +41,7 @@ document.querySelector("#btnImc").addEventListener("click", function
 
  const bLimpar = document.querySelector("#btnLimpar");
 
- bLimpar.addEventListener("click", () =>{
+    bLimpar.addEventListener("click", () =>{
     document.querySelector("#pesoI").value = '';
     document.querySelector("#alturaI").value = '';
     document.querySelector("#result").value = '';
