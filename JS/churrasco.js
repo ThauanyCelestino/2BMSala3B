@@ -49,6 +49,28 @@ function novoElemento (alunoAdd){
     numeroItem.innerHTML =  alunoAdd.qtde;
     numeroItem.dataset.id = alunoAdd.id;
     novoItem.appendChild(numeroItem);
+    novoItem.appendChild(btnApagar(alunoAdd.id));
     convidados.appendChild(novoItem);
   
+}
+
+
+function btnApagar(id) {
+    const novoBotao = document.createElement("button")
+    novoBotao.innerText = "X"
+
+    novoBotao.addEventListener("click", function(){
+        deletaElemento(this.parentNode, id)
+    })
+
+    return novoBotao;
+}
+
+
+function deletaElmento(tag,id) {
+    tag.remove()
+
+    alunos.splice(alunos.findIndex(elemento => elemento.id === id), 1)
+
+    localStorage.setItem("alunos",JSON.stringify(alunos))
 }
